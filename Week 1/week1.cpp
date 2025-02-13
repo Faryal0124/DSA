@@ -49,6 +49,43 @@ int main()
 }*/
 
 	//---------------------------EXERCISE 1.1---------------------------------
+    /*
+#include <iostream>
+using namespace std;
+class Complex {
+private:
+	float re;
+	float im;
+public:
+	Complex(float  real, float imagionary) : re(real), im(imagionary) {}
+	Complex(): re(0.0) ,im(0.0) {
+
+
+
+	}
+	 friend ostream& operator<<(ostream &out, const Complex &c) {
+		out << c.re << " + " << c.im << "i";
+		return out;
+	}
+
+	Complex operator*(Complex &other) {
+		Complex temp;
+		temp.re = re * other.re - im * other.im;
+		temp.im = re * other.im + im * other.re;
+		return temp;
+
+	}
+};
+
+	int main() {
+	 Complex c1(3, 2);
+	Complex c2(1, 7);
+	Complex result = c1 * c2;
+	cout<<result;
+
+	}
+*/
+
 
 
 	//-------------------EXAMPLE 1.3-------------------------
